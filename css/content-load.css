@@ -1,0 +1,26 @@
+.body_buffer_homepage {
+    height: 90px;
+    position: relative;
+}
+
+.global-nav-spacing {
+    height: 90px;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+}
+
+.global-nav-container {
+    display: block;
+    width: 100%;
+    background-color: #b3b3b3;
+    flex-direction: row;
+    align-items: center;
+}
+
+.global-nav-logo {
+    max-height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
