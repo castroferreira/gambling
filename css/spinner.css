@@ -1,7 +1,7 @@
 .loading {
     width: 100vw;
     height: 100vh;
-    background: #93c6d6;
+    background: #262d34;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,7 +12,7 @@
     color: official;
     width: 80px;
     height: 80px;
-    background: #93c6d6;
+    background: #262d34;
 }
 
 .spinner div {
@@ -110,11 +110,16 @@
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: #93c6d6;
+    background-color: #262d34;
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: .5s ease;
+}
+
+.nav-right {
+    overflow: hidden;
+    background-color: #262d34;
 }
 
 .loading:hover .overlay {
@@ -124,5 +129,5 @@
 
 body {
     margin: 0px;
-    background-color: #93c6d6;
+    background-color: #262d34;
 }
