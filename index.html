@@ -55,60 +55,35 @@
                     </div>
                     <br><br><br>
 
-                    <nav class="navbar">
-                        <ul class="nav">
-                            <li>
-                                GAME A
-                                <ul class="dropdown">
-                                    <li>Game 1</li>
-                                    <li>Game 2</li>
-                                    <li>Game 3</li>
-                                    <li>Game 4</li>
-                                    <li>Game 5</li>
-                                    <li>Game 6</li>
-                                </ul>
-                            </li>
-                            <li>
-                                GAME B
-                                <ul class="dropdown">
-                                    <li>Game 1</li>
-                                    <li>Game 2</li>
-                                    <li>Game 3</li>
-                                    <li>Game 4</li>
-                                    <li>Game 5</li>
-                                    <li>Game 6</li>
-                                    <li>Game 7</li>
-                                    <li>Game 8</li>
-                                    <li>Game 9</li>
-                                </ul>
-                            </li>
-                            <li>
-                                GAME C
-                                <ul class="dropdown">
-                                    <li>Game 1</li>
-                                    <li>Game 2</li>
-                                    <li>Game 3</li>
-                                </ul>
-                            </li>
-                            <li>
-                                GAME D
-                                <ul class="dropdown">
-                                    <li>Game 1</li>
-                                    <li>Game 2</li>
-                                </ul>
-                            </li>
-                            <li>
-                                GAME E
-                                <ul class="dropdown">
-                                    <li>Game 1</li>
-                                    <li>Game 2</li>
-                                    <li>Game 3</li>
-                                    <li>Game 4</li>
-                                    <li>Game 5</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">ALL GAMES</button>
+                        <button class="btn" onclick="filterSelection('games-a')">GAMES A</button>
+                        <button class="btn" onclick="filterSelection('games-b')">GAMES B</button>
+                        <button class="btn" onclick="filterSelection('games-c')">GAMES C</button>
+                        <button class="btn" onclick="filterSelection('games-d')">GAMES D</button>
+                    </div>
+
+                    <div class="container">
+                        <div class="filterDiv games-a">Game</div>
+                        <div class="filterDiv games-d games-c">Game</div>
+                        <div class="filterDiv games-a">Game</div>
+                        <div class="filterDiv games-d">Game</div>
+                        <div class="filterDiv games-a games-b">Game</div>
+                        <div class="filterDiv games-d">Game</div>
+                        <div class="filterDiv games-b">Game</div>
+                        <div class="filterDiv games-b">Game</div>
+                        <div class="filterDiv games-c">Game</div>
+                        <div class="filterDiv games-c games-b">Game</div>
+                        <div class="filterDiv games-c">Game</div>
+                        <div class="filterDiv games-c">Game</div>
+                        <div class="filterDiv games-b">Game</div>
+                        <div class="filterDiv games-c">Game</div>
+                        <div class="filterDiv games-c">Game</div>
+                        <div class="filterDiv games-b">Game</div>
+                        <div class="filterDiv games-a">Game</div>
+                        <div class="filterDiv games-d">Game</div>
+                    </div>
+
                 </div>
             </main>
 
@@ -133,7 +108,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    «
     <script src="./js/toggle.js"></script>
     <script src="./js/games-in-tab.js"></script>
 </body>
