@@ -2,114 +2,243 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="width" name="MobileOptimized" />
-    <meta content="true" name="HandheldFriendly" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BetVictor</title>
-    <link rel="stylesheet" type="text/css" href="./css/spinner.css" />
-    <link rel="stylesheet" type="text/css" href="./css/content-load.css" />
-    <link rel="stylesheet" type="text/css" href="./css/games-in-tab.css" />
-    <link rel="stylesheet" type="text/css" href="./css/toggle.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <div class="loading">
-        <div class="spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div id="spinner"></div>
 
-        <div class="overlay">
-            <main>
-                <nav>
-                    <a href="#"><img class="nav-logo" src="./images/logo.jpg" alt="logo-image"></a>
+    <header>
+        <nav>
+            <div class="menu-mobile mobile">
+                <input type="checkbox" id="overlay-input" />
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                        <li><a href="#">Menu Item</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#"><img class="nav-logo" src="images/logo.jpg" alt="logo-image" /></a>
+        </nav>
+    </header>
 
-                    <div class="nav-right hidden-xs">
-                        <div class="button" id="btn">
-                            <div class="bar top"></div>
-                            <div class="bar middle"></div>
-                            <div class="bar bottom"></div>
+
+    <!-- Desktop version -->
+    <div class="content desktop">
+        <div class="row">
+            <div class="col-2">
+                <div class="sidebar">
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-anchor">Menu Item</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="container">
+                    <section class="SEO">
+                        <div class="page-title">
+                            <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                                <br><br> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                                sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
                         </div>
-                    </div>
-                </nav>
-
-                <div class="SEO-text row">
-                    <br><br><br>
-                    <div class="page-title" style="text-align: center; color: white;">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <br>
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                        <p style="text-align: center; color: white;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <br><br><br>
-
-                    <div id="myBtnContainer">
-                        <button class="btn active" onclick="filterSelection('all')">ALL GAMES</button>
-                        <button class="btn" onclick="filterSelection('games-a')">GAMES A</button>
-                        <button class="btn" onclick="filterSelection('games-b')">GAMES B</button>
-                        <button class="btn" onclick="filterSelection('games-c')">GAMES C</button>
-                        <button class="btn" onclick="filterSelection('games-d')">GAMES D</button>
-                    </div>
-
-                    <div class="container">
-                        <div class="filterDiv games-a">Game</div>
-                        <div class="filterDiv games-d games-c">Game</div>
-                        <div class="filterDiv games-a">Game</div>
-                        <div class="filterDiv games-d">Game</div>
-                        <div class="filterDiv games-a games-b">Game</div>
-                        <div class="filterDiv games-d">Game</div>
-                        <div class="filterDiv games-b">Game</div>
-                        <div class="filterDiv games-b">Game</div>
-                        <div class="filterDiv games-c">Game</div>
-                        <div class="filterDiv games-c games-b">Game</div>
-                        <div class="filterDiv games-c">Game</div>
-                        <div class="filterDiv games-c">Game</div>
-                        <div class="filterDiv games-b">Game</div>
-                        <div class="filterDiv games-c">Game</div>
-                        <div class="filterDiv games-c">Game</div>
-                        <div class="filterDiv games-b">Game</div>
-                        <div class="filterDiv games-a">Game</div>
-                        <div class="filterDiv games-d">Game</div>
-                    </div>
-
-                </div>
-            </main>
-
-            <div class="nav-right visible-xs">
-                <div class="button" id="btn">
-                    <div class="bar top"></div>
-                    <div class="bar middle"></div>
-                    <div class="bar bottom"></div>
+                    </section>
+                    <section class="games-container">
+                        <div id="myBtnContainer" class="Btn-Container">
+                            <button class="btn active" onclick="filterSelection('all')">ALL GAMES</button>
+                            <button class="btn" onclick="filterSelection('games-a')">GAMES A</button>
+                            <button class="btn" onclick="filterSelection('games-b')">GAMES B</button>
+                            <button class="btn" onclick="filterSelection('games-c')">GAMES C</button>
+                            <button class="btn" onclick="filterSelection('games-d')">GAMES D</button>
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a">Game A</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c games-d">Game C | D</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a">Game A</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-d">Game D</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a games-b">Game A | B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-d">Game D</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-b">Game B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-b">Game B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c">Game C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-b games-c">Game C | B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c">Game C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c">Game C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-b">Game B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c">Game C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a">Game A</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a">Game A</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-c">Game C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-b">Game B</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-a games-c">Game A | C</div>
+                                </div>
+                                <div class="col-lg-8r filterDiv">
+                                    <div class="games-d">Game D</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-
-            <div class="sidebar">
-                <ul class="sidebar-list">
-                    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
-                    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
-                    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
-                    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
-                </ul>
-            </div>
-
         </div>
     </div>
+    <!-- Desktop version end -->
+
+    <!-- Mobile version -->
+    <div class="content mobile">
+        <div class="container">
+            <section class="SEO">
+                <div class="page-title">
+                    <h2>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h2>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        <br><br> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </section>
+            <section class="games-container">
+                <div id="myBtnContainer" class="Btn-Container">
+                    <button class="btn active" onclick="filterSelection('all')">ALL GAMES</button>
+                    <button class="btn" onclick="filterSelection('games-a')">GAMES A</button>
+                    <button class="btn" onclick="filterSelection('games-b')">GAMES B</button>
+                    <button class="btn" onclick="filterSelection('games-c')">GAMES C</button>
+                    <button class="btn" onclick="filterSelection('games-d')">GAMES D</button>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-3 filterDiv">
+                            <div class="games-a">Game A</div>
+                        </div>
+                        <div class=" col-3 filterDiv">
+                            <div class="games-c games-d">Game C | D</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-a">Game A</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-d">Game D</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-a games-b">Game A | B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-d">Game D</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-b">Game B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-b">Game B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-c">Game C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-b games-c">Game C | B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-c">Game C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-c">Game C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-b">Game B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-c">Game C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-a">Game A</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-a">Game A</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-c">Game C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-b">Game B</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-a games-c">Game A | C</div>
+                        </div>
+                        <div class="col-3 filterDiv">
+                            <div class="games-d">Game D</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Mobile version end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/toggle.js"></script>
-    <script src="./js/games-in-tab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+
+    <script src="js/loading.js"></script>
+    <script src="js/games.js"></script>
 </body>
 
 </html>

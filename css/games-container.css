@@ -1,0 +1,135 @@
+.games-container {
+    margin: 50px;
+}
+
+.games-container .Btn-Container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.games-container .btn {
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    background-color: #333c45;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.games-container .btn:hover {
+    background-color: #434f5b;
+    color: white;
+}
+
+.games-container .btn.active {
+    background-color: #434f5b;
+    color: white;
+}
+
+.games-container .filterDiv {
+    float: center;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    display: none;
+    flex: 0 1 calc(12.5%);
+    margin-bottom: 20px;
+}
+
+.games-a {
+    background-color: #899db2;
+    width: 110px;
+}
+
+.games-b {
+    background-color: #6f90b4;
+    width: 110px;
+}
+
+.games-c {
+    background-color: #5e87b3;
+    width: 110px;
+}
+
+.games-d {
+    background-color: #497eb7;
+    width: 110px;
+}
+
+.games-container .show {
+    display: block;
+}
+
+
+/* 
+MOBILE: 4 games per row: 25%
+DESKTOP: 8 games per row: 12,5%
+*/
+
+@media screen and (max-width: 1024px) {
+    .games-container {
+        margin: 10px;
+    }
+    .games-container .Btn-Container {
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .games-container .btn {
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        background-color: #333c45;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 20px;
+        text-size-adjust: inherit;
+        margin: 5px;
+    }
+    .games-container .btn:hover {
+        background-color: #434f5b;
+        color: white;
+    }
+    .games-container .btn.active {
+        background-color: #434f5b;
+        color: white;
+    }
+    .games-container .filterDiv {
+        float: center;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        display: none;
+        flex: 0 1 calc(20%);
+        margin-bottom: 20px;
+        margin: 5px;
+    }
+    .games-a {
+        background-color: #899db2;
+        width: 80px;
+        font-size: 13px;
+    }
+    .games-b {
+        background-color: #6f90b4;
+        width: 80px;
+        font-size: 13px;
+    }
+    .games-c {
+        background-color: #5e87b3;
+        width: 80px;
+        font-size: 13px;
+    }
+    .games-d {
+        background-color: #497eb7;
+        width: 80px;
+        font-size: 13px;
+    }
+    .games-container .show {
+        display: block;
+    }
+}

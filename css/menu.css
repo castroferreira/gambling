@@ -1,0 +1,119 @@
+.sidebar {
+    background-color: #262d34;
+    max-height: 100vh;
+    width: 16.66%;
+    height: 100%;
+    position: fixed;
+    color: white;
+}
+
+.sidebar-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.sidebar-item {
+    margin: 20px 0;
+}
+
+.sidebar-item:hover {
+    background-color: #434f5b;
+}
+
+.sidebar-anchor {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+    #overlay-button {
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        padding: 26px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+    }
+    #overlay-button span {
+        height: 3px;
+        width: 30px;
+        border-radius: 2px;
+        background-color: white;
+        position: relative;
+        display: block;
+        transition: all .2s ease-in-out;
+        text-align: initial;
+    }
+    #overlay-button span:before {
+        top: -10px;
+        visibility: visible;
+    }
+    #overlay-button span:after {
+        top: 10px;
+    }
+    #overlay-button span:before,
+    #overlay-button span:after {
+        height: 3px;
+        width: 30px;
+        border-radius: 2px;
+        background-color: white;
+        position: absolute;
+        content: "";
+        transition: all .2s ease-in-out;
+        text-align: initial;
+    }
+    #overlay-button:hover span,
+    #overlay-button:hover span:before,
+    #overlay-button:hover span:after {
+        background: #fff;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox]:checked#overlay {
+        visibility: visible;
+    }
+    #overlay {
+        height: calc(100vh - 80px);
+        width: 30%;
+        margin-top: 40px;
+        background: #262d34;
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+    }
+    #overlay.active {
+        visibility: visible;
+    }
+    #overlay ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    #overlay ul li {
+        padding: 1em;
+    }
+    #overlay ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    #overlay ul li a:hover {
+        background-color: #434f5b;
+        color: white;
+    }
+}

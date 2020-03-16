@@ -1,0 +1,37 @@
+/* Margins */
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+
+/* Margins ends */
+
+
+/* Margins TOP */
+
+.m-top-10 {
+    margin-top: 10px;
+}
+
+.m-top-25 {
+    margin-top: 25px;
+}
+
+
+/* Margins ends */
+
+
+/* Margins RIGHT */
+
+.m-right-50 {
+    margin-right: 50px;
+}
+
+.m-right-21 {
+    margin-right: 21px;
+}
